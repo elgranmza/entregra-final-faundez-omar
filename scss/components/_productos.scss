@@ -1,18 +1,21 @@
 //estilos de quien soy//
 @import "components/media-queris";
 @import "components/var";
+@import "components/general";
 
 .tienda-online{
     display:flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 150px;
     @include mobile{
         flex-direction:column;
         align-items: center;
+        gap: 20px;
     }
     @include tablet{
         flex-direction:column;
         align-items: center;
+        gap: 20px;
     }
 }
 .card {

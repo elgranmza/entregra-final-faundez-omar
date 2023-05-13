@@ -1,0 +1,117 @@
+//estilos de contactos y turnos////
+@import "components/media-queris";
+@import "components/var";
+
+.ubicacion-local {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.ubicacion-local iframe {
+    left: 0;
+    top: 50px;
+    ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.txt-bnb{
+    margin-bottom: 20px;
+    text-align: center;
+    color:$color-pr-fuente;
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+
+.txt-ubi {
+    margin-bottom: 20px;
+    text-align: justify;
+    color:$color-pr-fuente;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/*formulario de contacto */
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-form label {
+    color: black;
+}
+
+.contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+    width: 200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #dd1818;
+    transform: scale(0.85);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+    background-color:#dd1818;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+/*seccion de contactos*/
+.contactanos{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
